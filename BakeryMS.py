@@ -8,7 +8,7 @@ import csv
 app = customtkinter.CTk()
 app.title('Bakery')
 app.geometry("1500x600")
-app.config(bg = "#DF541F")
+app.config(bg = "#DF541F") 
 app.resizable(True, True)
 
 font1 = ('Courier New', 25, 'bold')
