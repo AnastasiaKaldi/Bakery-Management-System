@@ -15,7 +15,6 @@ font1 = ('Courier New', 25, 'bold')
 font2 = ('Courier New', 15, 'bold')
 font3 = ('Courier New', 12,'bold')
 
-
 price_list = [1, 5, 1, 3, 2, 3, 2, 1]
 
 TotalPrice = 0
