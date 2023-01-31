@@ -51,16 +51,7 @@ def pay():
             date_label.place(x =100, y= 200)
 
 
-def new():
-    costumer_entry.delete(0, END)
-    quantity1_combobox.set(0)
-    quantity2_combobox.set(0)
-    quantity3_combobox.set(0)
-    quantity4_combobox.set(0)
-    quantity5_combobox.set(0)
-    quantity6_combobox.set(0)
-    quantity7_combobox.set(0)
-    quantity8_combobox.set(0)
+
 
 def save():
     with open('Bill.csv', 'w', newline ='') as csvfile:
@@ -68,7 +59,16 @@ def save():
         writer.writerow(['customer name','total price','date'])
         writer.writerow([customer_entry.get(),total_price,date.today()])
         
-        
+def new():
+    costumer_entry.delete(0, END)
+    quantity1_combobox.set('0')
+    quantity2_combobox.set('0')
+    quantity3_combobox.set('0')
+    quantity4_combobox.set('0')
+    quantity5_combobox.set('0')
+    quantity6_combobox.set('0')
+    quantity7_combobox.set('0')
+    quantity8_combobox.set('0')
 
 
 
@@ -110,33 +110,41 @@ quantity1_combobox = customtkinter.CTkComboBox(app, font = font3, text_color = "
 quantity1_combobox.place(x=25 , y= 175)
 quantity1_combobox.set(0)
 
+
 quantity2_combobox = customtkinter.CTkComboBox(app, font = font3, text_color = "#000000", fg_color = "#FFFFFF", values = ('0', '1', '2', '3', '4', '5'), state = "readonly")
 quantity2_combobox.place(x=258 , y= 175)
 quantity2_combobox.set(0)
+
 
 quantity3_combobox = customtkinter.CTkComboBox(app, font = font3, text_color = "#000000", fg_color = "#FFFFFF", values = ('0', '1', '2', '3', '4', '5'), state = "readonly")
 quantity3_combobox.place(x=465 , y= 175)
 quantity3_combobox.set(0)
 
+
 quantity4_combobox = customtkinter.CTkComboBox(app, font = font3, text_color = "#000000", fg_color = "#FFFFFF", values = ('0', '1', '2', '3', '4', '5'), state = "readonly")
 quantity4_combobox.place(x=685, y= 175)
 quantity4_combobox.set(0)
+
 
 quantity5_combobox = customtkinter.CTkComboBox(app, font = font3, text_color = "#000000", fg_color = "#FFFFFF", values = ('0', '1', '2', '3', '4', '5'), state = "readonly")
 quantity5_combobox.place(x=25 , y= 407)
 quantity5_combobox.set(0)
 
+
 quantity6_combobox = customtkinter.CTkComboBox(app, font = font3, text_color = "#000000", fg_color = "#FFFFFF", values = ('0', '1', '2', '3', '4', '5'), state = "readonly")
 quantity6_combobox.place(x=245 , y= 407)
 quantity6_combobox.set(0)
+
 
 quantity7_combobox = customtkinter.CTkComboBox(app, font = font3, text_color = "#000000", fg_color = "#FFFFFF", values = ('0', '1', '2', '3', '4', '5'), state = "readonly")
 quantity7_combobox.place(x=465 , y= 407)
 quantity7_combobox.set(0)
 
+
 quantity8_combobox = customtkinter.CTkComboBox(app, font = font3, text_color = "#000000", fg_color = "#FFFFFF", values = ('0', '1', '2', '3', '4', '5'), state = "readonly")
 quantity8_combobox.place(x=685 , y= 407)
 quantity8_combobox.set(0)
+
 
 customer_label = customtkinter.CTkLabel(app, text = "Customer Name:", text_color = "#FFFFFF", font = font2, bg_color = "#DF541F")
 customer_label.place(x=870, y=100)
